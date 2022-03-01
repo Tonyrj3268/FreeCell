@@ -99,6 +99,15 @@ section{
     width: 71px;
 }
 
+@font-face { font-family: 'Open Sans Light'; src: url('../fonts/OpenSans-Light.ttf') format('truetype'); }
+.placement-table h1{
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: 'Open Sans Light';
+    color: rgba(130,130,130,1);
+    vertical-align: middle;
+}
 
 .card-table{
     width: 80%;
