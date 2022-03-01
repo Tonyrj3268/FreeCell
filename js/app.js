@@ -152,6 +152,7 @@ function handleCascDrop(event, ui, drop) {
 		// E: Reset draggable params (REQD here as we need to turn revert back on)
 		console.log(intTop);
 		card.draggable({
+			scroll: false,
 			helper: cascHelper,
 			start : function(event, ui){ $(this).draggable('option', 'revert', true); }
 		});
@@ -313,6 +314,7 @@ function doFillBoard() {
 	.draggable({
 		helper: cascHelper,
 		revert: true,
+		scroll: false,
 		start : handleDragStart,
 		stop  : handleDragStop
 	})
